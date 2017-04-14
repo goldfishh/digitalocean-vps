@@ -63,7 +63,10 @@
 > ## Download Link
 电脑端:
    https://sourceforge.net/projects/shadowsocksgui/files/dist/
+   <br>
 安卓端:
   https://play.google.com/store/apps/details?id=com.github.shadowsocks
+   <br>
 iOS端:
   https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118
+   <br>
