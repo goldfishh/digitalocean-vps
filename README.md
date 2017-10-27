@@ -1,21 +1,24 @@
-> ## 服务器测速
-       [http://speedtest-tor1.digitalocean.com/](url)
+# digitalocean-vps-ss搭建指南
+displayed in centOS 6.8 x64
+
+## 服务器测速
+       [digitalocean-speed-test](http://speedtest-tor1.digitalocean.com/)
 
 
 <br><br><br>
 
 
-> ## PUTTY
-       [https://github.com/larryli/putty](url)
+## PUTTY
+       [you need it to log in your vps](https://github.com/larryli/putty)
 
 
 <br><br><br>
 
 
 
-> ## 源代码
-<br>
-①    yum install epel-release
+## 源代码
+'''
+        yum install epel-release
 
         yum update
 
@@ -24,8 +27,9 @@
         easy_install pip
 
         pip install shadowsocks
-<br><br>
-②    vi /etc/shadowsocks.json
+'''
+'''
+       vi /etc/shadowsocks.json
       
          {
 
@@ -42,8 +46,9 @@
             "method":"aes-256-cfb"
 
         }
-<br><br>
-③    vi /etc/supervisord.conf(文章**尾部**空行)
+'''
+'''
+        vi /etc/supervisord.conf(文章**尾部**空行)
 
         [program:shadowsocks]
         command=ssserver -c /etc/shadowsocks.json
@@ -52,21 +57,25 @@
         user=root
         log_stderr=true
         logfile=/var/log/shadowsocks.log
-<br><br>
-④    vi /etc/rc.local(文件**中部**空行处)
-<br>
-        service supervisord start
-<br><br>
+'''
 
-⑤    reboot
-<br><br><br>
-> ## Download Link
-电脑端:
-   https://sourceforge.net/projects/shadowsocksgui/files/dist/
+'''
+       vi /etc/rc.local(文件**中部**空行处)
+'''
+'''
+        service supervisord start
+'''
+
+'''
+reboot
+'''
+<br>
+## Download Link
+   [电脑端:](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
    <br>
-安卓端:
-  https://play.google.com/store/apps/details?id=com.github.shadowsocks
+
+  [安卓端:](https://play.google.com/store/apps/details?id=com.github.shadowsocks)
    <br>
-iOS端:
-  https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118
+
+  [iOS端:](https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118)
    <br>
