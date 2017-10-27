@@ -2,14 +2,14 @@
 displayed in centOS 6.8 x64
 
 ## 服务器测速
-   点击:[digitalocean-speed-test](http://speedtest-tor1.digitalocean.com/)
+   Click it to test:[digitalocean-speed-test](http://speedtest-tor1.digitalocean.com/)
 
 
 
 
 
 ## PUTTY
-   点击:[you need it to log in your vps](https://github.com/larryli/putty)
+   Download:[you need it to log in your vps](https://github.com/larryli/putty)
 
 
 
@@ -85,4 +85,4 @@ displayed in centOS 6.8 x64
    下载: [iOS端](https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118)
 
 ## Reference article
-   [How to build a ss]http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html
+   [How to build a ss](http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html)
