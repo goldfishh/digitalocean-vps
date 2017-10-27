@@ -16,7 +16,8 @@ displayed in centOS 6.8 x64
 
 
 ## 源代码
-'''
+
+### 1.Get ready to install shadowsocks: 
 
         yum install epel-release
 
@@ -27,9 +28,9 @@ displayed in centOS 6.8 x64
         easy_install pip
 
         pip install shadowsocks
-'''
-'''
 
+
+### 2.Modifyjson file
        vi /etc/shadowsocks.json
       
          {
@@ -47,10 +48,11 @@ displayed in centOS 6.8 x64
             "method":"aes-256-cfb"
 
         }
-'''
-'''
 
+### 3.Add follow codes to the end of the relative file
         vi /etc/supervisord.conf(文章**尾部**空行)
+        
+        ----------以下内容为复制内容----------
         [program:shadowsocks]
         command=ssserver -c /etc/shadowsocks.json
         autostart=true
@@ -58,32 +60,29 @@ displayed in centOS 6.8 x64
         user=root
         log_stderr=true
         logfile=/var/log/shadowsocks.log
-        
-'''
+        ----------以下内容为复制内容----------
 
-'''
 
        vi /etc/rc.local(文件**中部**空行处)
        
-'''
-'''
+       ----------以下内容为复制内容----------       
+       service supervisord start
+       ----------以下内容为复制内容----------        
 
-        service supervisord start
-        
-'''
 
-'''
+### 4.reboot your vps
+         reboot
 
-reboot
 
-'''
 
 ## Download Link
-   下载:[电脑端:](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
+   下载:[电脑端](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
 
 
-  下载:[安卓端:](https://play.google.com/store/apps/details?id=com.github.shadowsocks)
+   下载:[安卓端](https://play.google.com/store/apps/details?id=com.github.shadowsocks)
 
 
- 下载: [iOS端:](https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118)
+   下载: [iOS端](https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118)
 
+## Reference article
+   [How to build a ss]http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html
