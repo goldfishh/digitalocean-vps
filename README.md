@@ -2,22 +2,22 @@
 displayed in centOS 6.8 x64
 
 ## 服务器测速
-       [digitalocean-speed-test](http://speedtest-tor1.digitalocean.com/)
+   点击:[digitalocean-speed-test](http://speedtest-tor1.digitalocean.com/)
 
 
-<br><br><br>
+
 
 
 ## PUTTY
-       [you need it to log in your vps](https://github.com/larryli/putty)
+   点击:[you need it to log in your vps](https://github.com/larryli/putty)
 
 
-<br><br><br>
 
 
 
 ## 源代码
 '''
+
         yum install epel-release
 
         yum update
@@ -29,6 +29,7 @@ displayed in centOS 6.8 x64
         pip install shadowsocks
 '''
 '''
+
        vi /etc/shadowsocks.json
       
          {
@@ -48,8 +49,8 @@ displayed in centOS 6.8 x64
         }
 '''
 '''
-        vi /etc/supervisord.conf(文章**尾部**空行)
 
+        vi /etc/supervisord.conf(文章**尾部**空行)
         [program:shadowsocks]
         command=ssserver -c /etc/shadowsocks.json
         autostart=true
@@ -57,25 +58,32 @@ displayed in centOS 6.8 x64
         user=root
         log_stderr=true
         logfile=/var/log/shadowsocks.log
+        
 '''
 
 '''
+
        vi /etc/rc.local(文件**中部**空行处)
+       
 '''
 '''
+
         service supervisord start
+        
 '''
 
 '''
+
 reboot
+
 '''
-<br>
+
 ## Download Link
-   [电脑端:](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
-   <br>
+   下载:[电脑端:](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
 
-  [安卓端:](https://play.google.com/store/apps/details?id=com.github.shadowsocks)
-   <br>
 
-  [iOS端:](https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118)
-   <br>
+  下载:[安卓端:](https://play.google.com/store/apps/details?id=com.github.shadowsocks)
+
+
+ 下载: [iOS端:](https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118)
+
